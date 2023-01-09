@@ -1,9 +1,11 @@
 import yfinance as yf
-def stock(ticket):
+
+
+def stock(ticket):  # default Stock
     ticker = yf.Ticker(ticket).info
     market_price = ticker['regularMarketPrice']
     previous_close_price = ticker['regularMarketPreviousClose']
-    print(f'symbol: {ticker["symbol"]} || Change {market_price-previous_close_price}')
+    print(f'symbol: {ticker["symbol"]} || Change {market_price - previous_close_price}')
     print('Market Price:', market_price)
     print('Previous Close Price:', previous_close_price)
     print(f'volume: {ticker["volume"]}')
@@ -13,15 +15,14 @@ def stock(ticket):
     print(f'targetHighPrice: {ticker["targetHighPrice"]}')
     print(f'Name: {ticker["shortName"]}')
     print(f'sharesShort: {ticker["sharesShort"]}')
-    print("           -----------------           ")
+
 
 def stock_v(ticket):
     ticker = yf.Ticker(ticket).info
     market_price = ticker['regularMarketPrice']
     previous_close_price = ticker['regularMarketPreviousClose']
-    change = market_price-previous_close_price
+    change = market_price - previous_close_price
     print(f'symbol: {ticker["symbol"]} || Change: {change}') if change < 0 else print(f'symbol: {ticker["symbol"]} || '
                                                                                       f'Change: +{change}')
     print('Market Price:', market_price)
     print(f'volume: {ticker["volume"]}')
-
