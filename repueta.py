@@ -5,7 +5,9 @@ def stock(ticket):  # default Stock
     ticker = yf.Ticker(ticket).info
     market_price = ticker['regularMarketPrice']
     previous_close_price = ticker['regularMarketPreviousClose']
-    print(f'symbol: {ticker["symbol"]} || Change {market_price - previous_close_price}')
+    change = market_price - previous_close_price
+    print(f'symbol: {ticker["symbol"]} || Change: {change}') if change < 0 else print(f'symbol: {ticker["symbol"]} || '
+                                                                                      f'Change: +{change}')
     print('Market Price:', market_price)
     print('Previous Close Price:', previous_close_price)
     print(f'volume: {ticker["volume"]}')
@@ -26,3 +28,18 @@ def stock_v(ticket):
                                                                                       f'Change: +{change}')
     print('Market Price:', market_price)
     print(f'volume: {ticker["volume"]}')
+
+def getName(ticket):
+    ticker = yf.Ticker(ticket).info
+    return (f'{ticker["shortName"]}')
+
+def getPrice(ticket):
+    ticker = yf.Ticker(ticket).info
+    return  (f'{ticker["regularMarketPrice"]}')
+    return  (f'{ticker["regularMarketPrice"]}')
+
+def getVolume(ticket):
+    ticker = yf.Ticker(ticket).info
+    return (ticker["volume"])
+
+print(getVolume("SPY")-getVolume("TSLA"))
