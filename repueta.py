@@ -50,3 +50,22 @@ def getChange(ticket):
     market_price = ticker['regularMarketPrice']
     previous_close_price = ticker['regularMarketPreviousClose']
     change = market_price - previous_close_price
+    change = round(change, 3)
+    return change
+
+
+def getChange(ticket, percentage):
+    ticker = yf.Ticker(ticket).info
+    market_price = ticker['regularMarketPrice']
+    previous_close_price = ticker['regularMarketPreviousClose']
+    if not percentage:
+        change = market_price - previous_close_price
+        change = round(change, 3)
+        return change
+    else:
+        change = ((market_price - previous_close_price)/market_price)*100
+        change = round(change, 2)
+        return change
+
+
+print(getChange("SPY",True))
