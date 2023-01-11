@@ -50,7 +50,6 @@ def getVolume10days(ticket):
     return ticker["averageVolume10days"]
 
 
-
 def getChange(ticket, percentage):
     ticker = yf.Ticker(ticket).info
     market_price = ticker['regularMarketPrice']
@@ -78,3 +77,151 @@ def getTargetMedianPrice(ticket):
 def getTargetHighPrice(ticket):
     ticker = yf.Ticker(ticket).info
     return ticker["targetHighPrice"]
+
+
+def getZip(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["zip"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getEmployees(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["fullTimeEmployees"]
+
+
+def getSummary(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["longBusinessSummary"]
+
+
+def getCity(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["city"]
+
+
+def getPhone(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["phone"]
+
+
+def getState(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["state"]
+
+
+def getCountry(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["country"]
+
+
+def getCompanyOfficers(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["companyOfficers"]
+
+
+def getWebsite(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["website"]
+
+
+def getMaxAge(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["maxAge"]
+
+
+def getAddress(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["address1"]
+
+
+def getIndustry(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["industry"]
+
+
+def getEbitdaMargins(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["ebitdaMargins"]
+
+
+def getProfitMargins(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["profitMargins"]
+
+
+def getGrossMargins(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["grossMargins"]
+
+
+def getOperatingCashflow(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["operatingCashflow"]
+
+
+def getRevenueGrowth(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["revenueGrowth"]
+
+
+def getOperatingMargins(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["operatingMargins"]
+
+
+def getEbitda(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["ebitda"]
+
+
+def getRecommendationKey(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["recommendationKey"]
+
+
+def getGrossProfits(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["grossProfits"]
+
+
+def getFreeCashflow(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["freeCashflow"]
+
+
+def getCurrentPrice(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["currentPrice"]
+
+
+def getEarningsGrowth(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["earningsGrowth"]
+
+def getCurrentRatio(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["currentRatio"]
+
+def getCash(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["totalCash"]
+
+def getDebt(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["totalDebt"]
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+print(getinfo("tsla"))
