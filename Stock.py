@@ -45,6 +45,12 @@ def getVolume(ticket):
     return ticker["volume"]
 
 
+def getVolume10days(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["averageVolume10days"]
+
+
+
 def getChange(ticket, percentage):
     ticker = yf.Ticker(ticket).info
     market_price = ticker['regularMarketPrice']
