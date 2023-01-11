@@ -45,15 +45,6 @@ def getVolume(ticket):
     return ticker["volume"]
 
 
-def getChange(ticket):
-    ticker = yf.Ticker(ticket).info
-    market_price = ticker['regularMarketPrice']
-    previous_close_price = ticker['regularMarketPreviousClose']
-    change = market_price - previous_close_price
-    change = round(change, 3)
-    return change
-
-
 def getChange(ticket, percentage):
     ticker = yf.Ticker(ticket).info
     market_price = ticker['regularMarketPrice']
@@ -63,9 +54,21 @@ def getChange(ticket, percentage):
         change = round(change, 3)
         return change
     else:
-        change = ((market_price - previous_close_price)/market_price)*100
+        change = ((market_price - previous_close_price) / market_price) * 100
         change = round(change, 2)
         return change
 
 
-print(getChange("SPY",True))
+def getTargetLowPrice(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["targetLowPrice"]
+
+
+def getTargetMedianPrice(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["targetMedianPrice"]
+
+
+def getTargetHighPrice(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["targetHighPrice"]
