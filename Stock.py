@@ -253,9 +253,86 @@ def get52WeekChange(ticket):
     ticker = yf.Ticker(ticket).info
     return ticker["52WeekChange"]
 
+
 def getForwardEps(ticket):
     ticker = yf.Ticker(ticket).info
     return ticker["forwardEps"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
+
+def getSector(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["sector"]
+
 
 def getSector(ticket):
     ticker = yf.Ticker(ticket).info
