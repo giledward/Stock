@@ -259,74 +259,74 @@ def getForwardEps(ticket):
     return ticker["forwardEps"]
 
 
-def getSector(ticket):
+def getSharesOutstanding(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["sharesOutstanding"]
 
 
-def getSector(ticket):
+def getBookValue(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["bookValue"]
 
 
-def getSector(ticket):
+def getSharesShort(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["sharesShort"]
 
 
-def getSector(ticket):
+def getSharesPercentSharesOut(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["sharesPercentSharesOut"]
 
 
-def getSector(ticket):
+def getHeldPercentInstitutions(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["heldPercentInstitutions"]
 
 
-def getSector(ticket):
+def getNetIncomeToCommon(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["netIncomeToCommon"]
 
 
-def getSector(ticket):
+def getTrailingEps(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["trailingEps"]
 
 
-def getSector(ticket):
+def getSandP52WeekChange(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["SandP52WeekChange"]
 
 
-def getSector(ticket):
+def getPriceToBook(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["priceToBook"]
 
 
-def getSector(ticket):
+def getHeldPercentInsiders(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["heldPercentInsiders"]
 
 
-def getSector(ticket):
+def getShortRatio(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["shortRatio"]
 
 
-def getSector(ticket):
+def getSharesShortPreviousMonthDate(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["sharesShortPreviousMonthDate"]
 
 
-def getSector(ticket):
+def getFloatShares(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["floatShares"]
 
 
-def getSector(ticket):
+def getEnterpriseValue(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["enterpriseValue"]
 
 
 def getSector(ticket):
