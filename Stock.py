@@ -203,21 +203,59 @@ def getEarningsGrowth(ticket):
     ticker = yf.Ticker(ticket).info
     return ticker["earningsGrowth"]
 
+
 def getCurrentRatio(ticket):
     ticker = yf.Ticker(ticket).info
     return ticker["currentRatio"]
+
 
 def getCash(ticket):
     ticker = yf.Ticker(ticket).info
     return ticker["totalCash"]
 
+
 def getDebt(ticket):
     ticker = yf.Ticker(ticket).info
     return ticker["totalDebt"]
 
-def getSector(ticket):
+
+def getRevenue(ticket):
     ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
+    return ticker["totalRevenue"]
+
+
+def getCashPerShare(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["totalCashPerShare"]
+
+
+def getRevenuePerShare(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["revenuePerShare"]
+
+
+def getQuickRatio(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["quickRatio"]
+
+
+def getTimezoneName(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["exchangeTimezoneName"]
+
+
+def getTimezoneShortName(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["exchangeTimezoneShortName"]
+
+
+def get52WeekChange(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["52WeekChange"]
+
+def getForwardEps(ticket):
+    ticker = yf.Ticker(ticket).info
+    return ticker["forwardEps"]
 
 def getSector(ticket):
     ticker = yf.Ticker(ticket).info
