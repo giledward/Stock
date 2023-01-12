@@ -329,14 +329,3 @@ def getEnterpriseValue(ticket):
     return ticker["enterpriseValue"]
 
 
-def getSector(ticket):
-    ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
-
-
-def getSector(ticket):
-    ticker = yf.Ticker(ticket).info
-    return ticker["sector"]
-
-
-print(getinfo("tsla"))
